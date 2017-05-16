@@ -57,7 +57,7 @@ class Sleepy:
         self.loop = asyncio.get_event_loop()
     
     async def hibernate_for(self, how_long):
-        end_time = self.loop.time() + how_long
+        end_time = self.loop.time() + how_long * 60
         while True:
             print('.', flush=True, end=' ')
             if (self.loop.time() + 1.0) >= end_time:

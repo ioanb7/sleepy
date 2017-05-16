@@ -6,13 +6,18 @@ abs_path = os.path.dirname(os.path.realpath(__file__))  # doesn't have /
 slpy = Sleepy(abs_path)
 slpy.go([
     {
-        "time": 90 * 3,
-        "volume": 70,
+        "time": 15,
+        "volume": 60,
+        "folder": "whitenoise"
+    },
+    {
+        "time": 90 * 5,
+        "volume": 60,
         "folder": "whitenoise"
     },
     {
         "time": 10,
-        "volume": 50,
+        "volume": 80,
         "folder": "slowlygettingup"
     },
     {
